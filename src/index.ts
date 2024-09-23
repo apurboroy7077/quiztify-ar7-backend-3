@@ -6,4 +6,4 @@ server.listen(EXPRESS_SERVER_PORT, () => {
     `Express server is running on http://localhost:${EXPRESS_SERVER_PORT}`
   );
 });
-export const connectMe = 7;
+export default server;
