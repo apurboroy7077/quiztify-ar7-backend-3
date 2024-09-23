@@ -1,7 +1,7 @@
 import { Socket } from "socket.io";
-import getGamingData from "../get-gaming-data/getGamingData";
-import getGamingDataAccordingToRoom from "./getGamingDataAccordingToRoom";
-import updatePlayerRequestTimestamp from "../update-player-request-timestamp/updatePlayerRequestTimestamp";
+import getGamingData from "../get-gaming-data/getGamingData.js";
+import getGamingDataAccordingToRoom from "./getGamingDataAccordingToRoom.js";
+import updatePlayerRequestTimestamp from "../update-player-request-timestamp/updatePlayerRequestTimestamp.js";
 
 const sendGamingDataToUsers = async (socket: Socket, dataFromClient: any) => {
   try {

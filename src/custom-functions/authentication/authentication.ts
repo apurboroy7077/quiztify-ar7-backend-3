@@ -1,7 +1,7 @@
 import express from "express";
 import jwt from "jsonwebtoken";
-import { JWT_SECRET_KEY } from "../../data/others/EnvironmentVariables";
-import { processedDataOfAuthenticationToken } from "../../data/others/types";
+import { JWT_SECRET_KEY } from "../../data/others/EnvironmentVariables.js";
+import { processedDataOfAuthenticationToken } from "../../data/others/types.js";
 const getUserAr7idFromToken = (request: express.Request) => {
   return new Promise((resolve, reject) => {
     try {

@@ -1,6 +1,6 @@
-import getGamingData from "../../socket/functions/get-gaming-data/getGamingData";
-import saveGamingData from "../file-system/saveGamingData";
-import roomIdMaker from "../roomIdMaker.ts/roomIdMaker";
+import getGamingData from "../../socket/functions/get-gaming-data/getGamingData.js";
+import saveGamingData from "../file-system/saveGamingData.js";
+import roomIdMaker from "../roomIdMaker.ts/roomIdMaker.js";
 
 type addPlayerToRoomType = (roomId: string, playerName: string) => Promise<any>;
 

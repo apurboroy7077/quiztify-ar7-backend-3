@@ -1,9 +1,9 @@
 import { createServer } from "http";
 import { Server, Socket } from "socket.io";
-import getUsersData from "./functions/getUsersData";
-import sendDataToUsers from "./functions/send-data-to-users/sendDataToUsers";
-import sendGamingDataToUsers from "./functions/send-gaming-data-to-users/sendGamingDataToUsers";
-import refineGamingData from "./functions/refine-gaming-data/refineGamingData";
+import getUsersData from "./functions/getUsersData.js";
+import sendDataToUsers from "./functions/send-data-to-users/sendDataToUsers.js";
+import sendGamingDataToUsers from "./functions/send-gaming-data-to-users/sendGamingDataToUsers.js";
+import refineGamingData from "./functions/refine-gaming-data/refineGamingData.js";
 
 const httpServer = createServer();
 const socket = new Server(httpServer, {

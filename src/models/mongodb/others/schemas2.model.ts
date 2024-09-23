@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { BANNED_SUBJECT_DATA_COLLECTION_NAME } from "./collectionNames";
+import { BANNED_SUBJECT_DATA_COLLECTION_NAME } from "./collectionNames.js";
 // -------------------------------------------------------------------------------------------------------------------------------------------
 const bannedSubjectSchema = new mongoose.Schema({
   ar7idOfTheBannedSubject: {

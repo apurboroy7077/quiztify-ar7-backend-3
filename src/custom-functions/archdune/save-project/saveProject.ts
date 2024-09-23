@@ -1,7 +1,7 @@
-import { project2DataModelMongoDbMongoose } from "../../../models/mongodb/archdune/archdune2.model";
-import processProjectData from "./process-project-data/processProjectData";
-import saveAndGiveAdditionalFieldsImagesLink from "./save-and-give-additional-field-images-link/saveAndGiveAdditionalFieldsImagesLink";
-import saveAndGiveProjectImageLink from "./save-project-image-and-give-link/saveAndGiveProjectImageLink";
+import { project2DataModelMongoDbMongoose } from "../../../models/mongodb/archdune/archdune2.model.js";
+import processProjectData from "./process-project-data/processProjectData.js";
+import saveAndGiveAdditionalFieldsImagesLink from "./save-and-give-additional-field-images-link/saveAndGiveAdditionalFieldsImagesLink.js";
+import saveAndGiveProjectImageLink from "./save-project-image-and-give-link/saveAndGiveProjectImageLink.js";
 
 const saveProject = async (fields: any, files: any) => {
   return new Promise(async (resolve, reject) => {

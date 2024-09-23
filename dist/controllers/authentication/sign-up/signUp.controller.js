@@ -1,0 +1,20 @@
+import { checkIfEmailAlreadyExistsInUsersData } from "../../../custom-functions-2/1/check-if-email-already-exists/checkIfEmailAlreadyExists.js";
+import { storeDataToUnverifiedUsersDatabase } from "../../../custom-functions-2/1/store-data-to-unverified-users-database/storeDataToUnverifiedUsersDatabase.js";
+import { sendVerificationCodeToUser } from "../../../custom-functions-2/1/send-verification-code-to-user/sendVerificationCodeToUser.js";
+const signUpController = async (request, response) => {
+    try {
+        const receivedData = request.body;
+        const { userEmail } = receivedData;
+        await checkIfEmailAlreadyExistsInUsersData(userEmail);
+        const verificationCode = await storeDataToUnverifiedUsersDatabase(receivedData);
+        await sendVerificationCodeToUser(verificationCode, userEmail);
+        response.status(200).json({ message: "Signed Up Successful" });
+    }
+    catch (error) {
+        console.log(error);
+        // SENDING RESPONSE IF ANYTHING GOES WRONG---------------------------------------------------------------------
+        response.status(500).json({ message: error });
+    }
+};
+export { signUpController };
+//# sourceMappingURL=signUp.controller.js.map

@@ -1,4 +1,4 @@
-import { questionsData } from "../../data/questions/questionsData";
+import { questionsData } from "../../data/questions/questionsData.js";
 type giveRandomQuestionType = (numberOfQuestions: number) => questionData[];
 const giveRandomQuestion: giveRandomQuestionType = (numberOfQuestions) => {
   const choosenQuestions: questionData[] = [];

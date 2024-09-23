@@ -1,6 +1,6 @@
-import ar7id from "../../../custom-functions/ar7id/ar7id";
-import { mySqlConnection } from "../../../custom-functions/database/mysql/connectMySql";
-import { hashMyPassword } from "../../../custom-functions/password-hashing/hashingPassword";
+import ar7id from "../../../custom-functions/ar7id/ar7id.js";
+import { mySqlConnection } from "../../../custom-functions/database/mysql/connectMySql.js";
+import { hashMyPassword } from "../../../custom-functions/password-hashing/hashingPassword.js";
 
 const saveUserDataToMySqlDatabase = (data: any) => {
   return new Promise(async (resolve, reject) => {

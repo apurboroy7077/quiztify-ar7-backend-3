@@ -1,4 +1,4 @@
-import { project2DataModelMongoDbMongoose } from "../../../models/mongodb/archdune/archdune2.model";
+import { project2DataModelMongoDbMongoose } from "../../../models/mongodb/archdune/archdune2.model.js";
 
 const saveEditedProject = (editedData: editProjectReceivedDataType) => {
   return new Promise(async (resolve, reject) => {

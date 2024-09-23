@@ -1,6 +1,6 @@
 import express from "express";
-import checkIfEmailAndPasswordMatchesWithAnyUserInDatabase from "../../../custom-functions-2/1/check-if-email-and-password-matches-with-any-user-in-database/checkIfEmailAndPasswordMatchesWithAnyUserInDatabase";
-import giveAuthenticationToken from "../../../custom-functions/give-authentication-token/giveAuthenticationToken";
+import checkIfEmailAndPasswordMatchesWithAnyUserInDatabase from "../../../custom-functions-2/1/check-if-email-and-password-matches-with-any-user-in-database/checkIfEmailAndPasswordMatchesWithAnyUserInDatabase.js";
+import giveAuthenticationToken from "../../../custom-functions/give-authentication-token/giveAuthenticationToken.js";
 
 export const signInController = async (
   request: express.Request,

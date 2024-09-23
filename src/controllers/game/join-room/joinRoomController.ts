@@ -1,7 +1,7 @@
 import express from "express";
-import getGamingData from "../../../socket/functions/get-gaming-data/getGamingData";
-import createRoom from "../../../custom-functions/create-room/createRoom";
-import addPlayerToRoom from "../../../custom-functions/add-player-to-room/addPlayerToRoom";
+import getGamingData from "../../../socket/functions/get-gaming-data/getGamingData.js";
+import createRoom from "../../../custom-functions/create-room/createRoom.js";
+import addPlayerToRoom from "../../../custom-functions/add-player-to-room/addPlayerToRoom.js";
 
 const joinRoomController = async (
   request: express.Request,

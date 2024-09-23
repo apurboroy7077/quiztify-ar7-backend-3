@@ -1,6 +1,6 @@
-import giveDate from "../../../../utils/giveDate";
-import giveNumberFromString from "./give-number-from-string/giveNumberFromString";
-import processImageData from "./process-images-data/processImageData";
+import giveDate from "../../../../utils/giveDate.js";
+import giveNumberFromString from "./give-number-from-string/giveNumberFromString.js";
+import processImageData from "./process-images-data/processImageData.js";
 
 const turnToObject = (targetData: any) => {
   const targetDataKeys = Object.keys(targetData);

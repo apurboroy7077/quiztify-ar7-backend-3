@@ -1,4 +1,4 @@
-import getGamingData from "../get-gaming-data/getGamingData";
+import getGamingData from "../get-gaming-data/getGamingData.js";
 
 const getGamingDataAccordingToRoom = async (roomId: string) => {
   return new Promise(async (resolve, reject) => {

@@ -1,5 +1,5 @@
 import express from "express";
-import verifyAccount from "../../../custom-functions-2/1/verify-and-create-data-in-original-database/verifyAccount";
+import verifyAccount from "../../../custom-functions-2/1/verify-and-create-data-in-original-database/verifyAccount.js";
 
 const verifyAccountController = async (
   request: express.Request,

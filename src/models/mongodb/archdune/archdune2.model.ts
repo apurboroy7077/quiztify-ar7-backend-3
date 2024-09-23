@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { COLLECTION_NAME_ARCHDUNE_PROJECT_DATA } from "./archDuneCollectionNames.model";
+import { COLLECTION_NAME_ARCHDUNE_PROJECT_DATA } from "./archDuneCollectionNames.model.js";
 
 const fieldImagesSchema = new mongoose.Schema({
   caption: {

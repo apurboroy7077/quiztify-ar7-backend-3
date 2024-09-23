@@ -1,7 +1,7 @@
 import express from "express";
-import { projectsDataModelMongoDbMongoose } from "../../models/mongodb/archdune/archdune.model";
+import { projectsDataModelMongoDbMongoose } from "../../models/mongodb/archdune/archdune.model.js";
 import mongoose from "mongoose";
-import { project2DataModelMongoDbMongoose } from "../../models/mongodb/archdune/archdune2.model";
+import { project2DataModelMongoDbMongoose } from "../../models/mongodb/archdune/archdune2.model.js";
 export const giveProjectDataController = async (
   request: express.Request,
   response: express.Response

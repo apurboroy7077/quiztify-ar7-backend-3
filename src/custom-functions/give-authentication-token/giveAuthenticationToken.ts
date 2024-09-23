@@ -1,5 +1,5 @@
 import jwt, { JwtPayload } from "jsonwebtoken";
-import { JWT_SECRET_KEY } from "../../data/others/EnvironmentVariables";
+import { JWT_SECRET_KEY } from "../../data/others/EnvironmentVariables.js";
 
 const giveAuthenticationToken = (email: string) => {
   return new Promise(async (resolve, reject) => {

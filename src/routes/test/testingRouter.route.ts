@@ -3,7 +3,7 @@ import {
   crashServerController,
   testController,
   testController2,
-} from "../../controllers/test/test.controller";
+} from "../../controllers/test/test.controller.js";
 
 const testingRouter = express.Router();
 testingRouter.get("/test/1", testController);

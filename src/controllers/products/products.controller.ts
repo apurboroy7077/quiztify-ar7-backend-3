@@ -12,7 +12,7 @@ import jwt, { JwtPayload } from "jsonwebtoken";
 import {
   JWT_SECRET_KEY,
   firebaseConfig,
-} from "../../data/others/EnvironmentVariables";
+} from "../../data/others/EnvironmentVariables.js";
 import formidable from "formidable";
 import path from "path";
 import {
@@ -32,9 +32,9 @@ import {
 } from "firebase/storage";
 
 import { arrayBuffer } from "stream/consumers";
-import { processedDataOfAuthenticationToken } from "../../data/others/types";
-import ar7id from "../../custom-functions/ar7id/ar7id";
-import GiveProductDetailsFromAr7id from "../../custom-functions/products/GiveProductDetailsFromAr7id";
+import { processedDataOfAuthenticationToken } from "../../data/others/types.js";
+import ar7id from "../../custom-functions/ar7id/ar7id.js";
+import GiveProductDetailsFromAr7id from "../../custom-functions/products/GiveProductDetailsFromAr7id.js";
 initializeApp(firebaseConfig);
 const firebaseStorage = getStorage();
 const productsUploadController = async (

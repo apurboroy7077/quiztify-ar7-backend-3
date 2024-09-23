@@ -1,16 +1,16 @@
 import express from "express";
-import { authenticationRouter } from "./routes/authentication/authenticationRoutes.route";
-import { connectDB } from "./custom-functions/database/connectDB";
-import { testingRouter } from "./routes/test/testingRouter.route";
+import { authenticationRouter } from "./routes/authentication/authenticationRoutes.route.js";
+import { connectDB } from "./custom-functions/database/connectDB.js";
+import { testingRouter } from "./routes/test/testingRouter.route.js";
 import cors from "cors";
 import morgan from "morgan";
-import { productsRouter } from "./routes/products/products.route";
-import { userActivityRouter } from "./routes/user-activity/userActivity.route";
-import { adminRouter } from "./routes/admin/admin.route";
-import { projectsRouter } from "./routes/projects/projects.route";
-import gameRouter from "./routes/game/game.route";
-import { connectToMySqlDatabase } from "./custom-functions/database/mysql/connectMySql";
-import { mySqlRouter } from "./routes/mysql/mysql.route";
+import { productsRouter } from "./routes/products/products.route.js";
+import { userActivityRouter } from "./routes/user-activity/userActivity.route.js";
+import { adminRouter } from "./routes/admin/admin.route.js";
+import { projectsRouter } from "./routes/projects/projects.route.js";
+import gameRouter from "./routes/game/game.route.js";
+import { connectToMySqlDatabase } from "./custom-functions/database/mysql/connectMySql.js";
+import { mySqlRouter } from "./routes/mysql/mysql.route.js";
 
 const app = express(); // Create an Express app
 

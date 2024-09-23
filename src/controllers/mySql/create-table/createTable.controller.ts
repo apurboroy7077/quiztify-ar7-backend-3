@@ -1,5 +1,5 @@
 import express from "express";
-import saveUserDataToMySqlDatabase from "../../../custom-functions-2/1/save-user-data-to-mysql-database/saveUserDataToMySqlDatabase";
+import saveUserDataToMySqlDatabase from "../../../custom-functions-2/1/save-user-data-to-mysql-database/saveUserDataToMySqlDatabase.js";
 
 const createTableControllerOfMySql = async (
   request: express.Request,

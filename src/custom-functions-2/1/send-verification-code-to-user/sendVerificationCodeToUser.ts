@@ -1,5 +1,5 @@
-import { nodemailerTransporter } from "../send-email-using-nodemailer/sendEmailByNodeMailer";
-import verificationCodeBody from "../verification-code-body/verificationCodeBody";
+import { nodemailerTransporter } from "../send-email-using-nodemailer/sendEmailByNodeMailer.js";
+import verificationCodeBody from "../verification-code-body/verificationCodeBody.js";
 
 const sendVerificationCodeToUser = (verificationCode: any, email: string) => {
   return new Promise(async (resolve, reject) => {

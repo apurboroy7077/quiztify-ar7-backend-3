@@ -2,7 +2,7 @@ import express from "express";
 import {
   IMPONEXPO_SUPERUSER_KEY,
   JWT_SECRET_KEY,
-} from "../../data/others/EnvironmentVariables";
+} from "../../data/others/EnvironmentVariables.js";
 import formidable from "formidable";
 // import {
 //   adminDataModelMongoDbMongoose,
@@ -14,26 +14,26 @@ import formidable from "formidable";
 //   userDataModelMongoDbMongoose,
 // } from "../../models/mongodb/others/schemas.model";
 import jwt from "jsonwebtoken";
-import { processedDataOfAuthenticationToken } from "../../data/others/types";
+import { processedDataOfAuthenticationToken } from "../../data/others/types.js";
 import {
   checkIsAdmin,
   checkIsAdmin2,
-} from "../../custom-functions/middlewares/admin/adminMiddlewares";
-import { bannedSubjectDataModelMongoDbMongoose } from "../../models/mongodb/others/schemas2.model";
+} from "../../custom-functions/middlewares/admin/adminMiddlewares.js";
+import { bannedSubjectDataModelMongoDbMongoose } from "../../models/mongodb/others/schemas2.model.js";
 import {
   ARCHDUNE_ADMIN_JWT_KEY,
   ARCHDUNE_SUPER_USER_PASSWORD,
-} from "../../data/archdune/variables/ArchduneVariables";
-import { projectsDataModelMongoDbMongoose } from "../../models/mongodb/archdune/archdune.model";
+} from "../../data/archdune/variables/ArchduneVariables.js";
+import { projectsDataModelMongoDbMongoose } from "../../models/mongodb/archdune/archdune.model.js";
 import mongoose from "mongoose";
 import ArchDuneCheckAdmin, {
   ArchDuneCheckAdminFromForm,
-} from "../../custom-functions/archdune/ArchDuneCheckAdmin";
-import saveFileToLocalDirectory from "../../custom-functions/files/save-files-to-local-directory/saveFileToLocalDirectory";
-import saveProject from "../../custom-functions/archdune/save-project/saveProject";
-import wait from "../../custom-functions/utils/wait";
-import giveDate from "../../custom-functions/utils/giveDate";
-import saveEditedProject from "../../custom-functions/archdune/save-edited-project/saveEditedProject";
+} from "../../custom-functions/archdune/ArchDuneCheckAdmin.js";
+import saveFileToLocalDirectory from "../../custom-functions/files/save-files-to-local-directory/saveFileToLocalDirectory.js";
+import saveProject from "../../custom-functions/archdune/save-project/saveProject.js";
+import wait from "../../custom-functions/utils/wait.js";
+import giveDate from "../../custom-functions/utils/giveDate.js";
+import saveEditedProject from "../../custom-functions/archdune/save-edited-project/saveEditedProject.js";
 const ObjectId = mongoose.Types.ObjectId;
 const makingSomeoneAdminController = async (
   request: express.Request,

@@ -1,4 +1,4 @@
-import { mySqlConnection } from "../../../custom-functions/database/mysql/connectMySql";
+import { mySqlConnection } from "../../../custom-functions/database/mysql/connectMySql.js";
 
 const checkIfEmailAlreadyExistsInUsersData = (email: string) => {
   return new Promise(async (resolve, reject) => {

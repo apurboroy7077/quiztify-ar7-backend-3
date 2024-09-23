@@ -1,5 +1,5 @@
-import { mySqlConnection } from "../../../custom-functions/database/mysql/connectMySql";
-import saveUserDataToVerifiedDatabase from "../save-user-data-to-verified-database/saveUserDataToVerifiedDatabase";
+import { mySqlConnection } from "../../../custom-functions/database/mysql/connectMySql.js";
+import saveUserDataToVerifiedDatabase from "../save-user-data-to-verified-database/saveUserDataToVerifiedDatabase.js";
 
 const verifyAccount = (verificationCode: any) => {
   return new Promise(async (resolve, reject) => {

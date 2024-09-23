@@ -1,7 +1,7 @@
 import express from "express";
 import jwt from "jsonwebtoken";
-import { JWT_SECRET_KEY } from "../../data/others/EnvironmentVariables";
-import { processedDataOfAuthenticationToken } from "../../data/others/types";
+import { JWT_SECRET_KEY } from "../../data/others/EnvironmentVariables.js";
+import { processedDataOfAuthenticationToken } from "../../data/others/types.js";
 // import {
 //   commentsDataModelMongoDbMongoose,
 //   followersDataModelMongoDbMongoose,
@@ -13,7 +13,7 @@ import { processedDataOfAuthenticationToken } from "../../data/others/types";
 import {
   authorizeAndGiveReceivedData,
   getUserAr7idFromToken,
-} from "../../custom-functions/authentication/authentication";
+} from "../../custom-functions/authentication/authentication.js";
 const likeSomethingController = async (
   request: express.Request,
   response: express.Response

@@ -1,6 +1,6 @@
 import express from "express";
-import { JWT_SECRET_KEY } from "../../../data/others/EnvironmentVariables";
-import { processedDataOfAuthenticationToken } from "../../../data/others/types";
+import { JWT_SECRET_KEY } from "../../../data/others/EnvironmentVariables.js";
+import { processedDataOfAuthenticationToken } from "../../../data/others/types.js";
 // import { adminDataModelMongoDbMongoose } from "../../../models/mongodb/others/schemas.model";
 import jwt from "jsonwebtoken";
 import { resolve } from "path";

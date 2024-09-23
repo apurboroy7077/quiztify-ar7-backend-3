@@ -1,7 +1,7 @@
 import express from "express";
-import { parseJwtToken } from "../../../custom-functions-2/1/parse-authentication-token/parseAuthenticationToken";
-import { JWT_SECRET_KEY } from "../../../data/others/EnvironmentVariables";
-import giveUserDataFromSqlDatabaseByEmail from "../../../custom-functions-2/1/give-user-data-from-sql-database-by-email/giveUserDataFromSqlDatabaseByEmail";
+import { parseJwtToken } from "../../../custom-functions-2/1/parse-authentication-token/parseAuthenticationToken.js";
+import { JWT_SECRET_KEY } from "../../../data/others/EnvironmentVariables.js";
+import giveUserDataFromSqlDatabaseByEmail from "../../../custom-functions-2/1/give-user-data-from-sql-database-by-email/giveUserDataFromSqlDatabaseByEmail.js";
 
 export const getUserDataByAuthenticationTokenController = async (
   request: express.Request,

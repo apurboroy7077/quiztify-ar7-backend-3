@@ -1,5 +1,5 @@
-import getGamingData from "../../../socket/functions/get-gaming-data/getGamingData";
-import saveGamingData from "../../file-system/saveGamingData";
+import getGamingData from "../../../socket/functions/get-gaming-data/getGamingData.js";
+import saveGamingData from "../../file-system/saveGamingData.js";
 
 const stopTheGameOfTheRoom = async (roomId: string) => {
   const gameData = await getGamingData();

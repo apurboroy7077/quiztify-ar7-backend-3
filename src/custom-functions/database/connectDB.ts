@@ -3,11 +3,11 @@ import {
   databaseURL,
   databaseURL_2,
   databaseURL_3,
-} from "../../data/others/EnvironmentVariables";
+} from "../../data/others/EnvironmentVariables.js";
 import {
   archduneDatabaseUrl,
   quiztifyAR7DatabaseUrl,
-} from "../../data/archdune/variables/ArchduneVariables";
+} from "../../data/archdune/variables/ArchduneVariables.js";
 
 const connectDB = async () => {
   await mongoose

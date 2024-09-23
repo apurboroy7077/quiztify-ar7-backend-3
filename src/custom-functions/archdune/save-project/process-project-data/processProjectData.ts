@@ -1,4 +1,4 @@
-import turnToObject from "./turn-into-object/turnToObject";
+import turnToObject from "./turn-into-object/turnToObject.js";
 
 const processProjectData = (
   projectImageLink: any,

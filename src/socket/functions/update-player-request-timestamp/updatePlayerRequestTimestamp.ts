@@ -1,6 +1,6 @@
 import { rejects } from "assert";
-import getGamingData from "../get-gaming-data/getGamingData";
-import saveGamingData from "../../../custom-functions/file-system/saveGamingData";
+import getGamingData from "../get-gaming-data/getGamingData.js";
+import saveGamingData from "../../../custom-functions/file-system/saveGamingData.js";
 
 const updatePlayerRequestTimestamp = (
   roomId: string,

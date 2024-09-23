@@ -1,8 +1,8 @@
-import getGamingData from "../../socket/functions/get-gaming-data/getGamingData";
-import ar7id from "../ar7id/ar7id";
-import saveGamingData from "../file-system/saveGamingData";
-import giveRandomQuestion from "../give-random-question/giveRandomQuestion";
-import roomIdMaker from "../roomIdMaker.ts/roomIdMaker";
+import getGamingData from "../../socket/functions/get-gaming-data/getGamingData.js";
+import ar7id from "../ar7id/ar7id.js";
+import saveGamingData from "../file-system/saveGamingData.js";
+import giveRandomQuestion from "../give-random-question/giveRandomQuestion.js";
+import roomIdMaker from "../roomIdMaker.ts/roomIdMaker.js";
 
 const createRoom = (roomName: string, playerName: string) => {
   return new Promise(async (resolve, reject) => {

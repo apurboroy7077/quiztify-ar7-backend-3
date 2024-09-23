@@ -1,9 +1,9 @@
-import { mySqlConnection } from "../../../custom-functions/database/mysql/connectMySql";
+import { mySqlConnection } from "../../../custom-functions/database/mysql/connectMySql.js";
 import {
   checkMyPasswordVersion2,
   checkPassword,
-} from "../../../custom-functions/password-hashing/hashingPassword";
-import giveUserDataFromSqlDatabaseByEmail from "../give-user-data-from-sql-database-by-email/giveUserDataFromSqlDatabaseByEmail";
+} from "../../../custom-functions/password-hashing/hashingPassword.js";
+import giveUserDataFromSqlDatabaseByEmail from "../give-user-data-from-sql-database-by-email/giveUserDataFromSqlDatabaseByEmail.js";
 
 const checkIfEmailAndPasswordMatchesWithAnyUserInDatabase = (
   email: string,

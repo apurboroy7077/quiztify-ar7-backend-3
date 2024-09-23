@@ -2,7 +2,7 @@ import {
   productDataType,
   productDetailsForSendingToClientType,
   userDataForClientSideType,
-} from "../../data/others/types";
+} from "../../data/others/types.js";
 // import {
 //   commentsDataModelMongoDbMongoose,
 //   followersDataModelMongoDbMongoose,
@@ -11,7 +11,7 @@ import {
 //   sellersDataModelMongoDbMongoose,
 //   userDataModelMongoDbMongoose,
 // } from "../../models/mongodb/others/schemas.model";
-import ar7id from "../ar7id/ar7id";
+import ar7id from "../ar7id/ar7id.js";
 
 const GiveProductDetailsFromAr7id = (ar7id_: string) => {
   return new Promise(async (resolve, reject) => {

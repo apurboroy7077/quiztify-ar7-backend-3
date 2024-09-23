@@ -1,5 +1,5 @@
 import { register } from "module";
-import { mySqlConnection } from "../../../custom-functions/database/mysql/connectMySql";
+import { mySqlConnection } from "../../../custom-functions/database/mysql/connectMySql.js";
 
 const saveUserDataToVerifiedDatabase = (
   id: string,

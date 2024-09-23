@@ -3,7 +3,7 @@ import {
   CLOUDINARY_API_KEY,
   CLOUDINARY_API_SECRET,
   CLOUDINARY_CLOUD_NAME,
-} from "../../../../data/archdune/variables/ArchduneVariables";
+} from "../../../../data/archdune/variables/ArchduneVariables.js";
 import { error } from "console";
 cloudinary.config({
   cloud_name: CLOUDINARY_CLOUD_NAME,

@@ -1,7 +1,7 @@
 import { readFile, rename, writeFile } from "fs";
 import { copyFile } from "fs/promises";
 import path from "path";
-import giveBufferFromPath from "../give-buffer-of-file/giveBufferFromPath";
+import giveBufferFromPath from "../give-buffer-of-file/giveBufferFromPath.js";
 import { error } from "console";
 
 const saveFileToLocalDirectory = async (file_: any) => {

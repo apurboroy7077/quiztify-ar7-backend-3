@@ -1,4 +1,4 @@
-import saveImageAndGiveLink from "../save-image-and-give-link/saveImageAndGiveLink";
+import saveImageAndGiveLink from "../save-image-and-give-link/saveImageAndGiveLink.js";
 
 const saveAndGiveProjectImageLink = async (files: any) => {
   return new Promise(async (resolve, reject) => {

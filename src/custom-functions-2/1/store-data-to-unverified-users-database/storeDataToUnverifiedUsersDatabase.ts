@@ -1,7 +1,7 @@
-import ar7id from "../../../custom-functions/ar7id/ar7id";
-import { mySqlConnection } from "../../../custom-functions/database/mysql/connectMySql";
-import { hashMyPassword } from "../../../custom-functions/password-hashing/hashingPassword";
-import random7DigitsNumber from "../../utils/random7DigitsNumber";
+import ar7id from "../../../custom-functions/ar7id/ar7id.js";
+import { mySqlConnection } from "../../../custom-functions/database/mysql/connectMySql.js";
+import { hashMyPassword } from "../../../custom-functions/password-hashing/hashingPassword.js";
+import random7DigitsNumber from "../../utils/random7DigitsNumber.js";
 
 const storeDataToUnverifiedUsersDatabase = (data: any) => {
   return new Promise(async (resolve, reject) => {

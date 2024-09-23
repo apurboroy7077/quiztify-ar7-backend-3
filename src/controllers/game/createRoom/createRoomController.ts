@@ -1,6 +1,6 @@
 import express from "express";
-import getGamingData from "../../../socket/functions/get-gaming-data/getGamingData";
-import createRoom from "../../../custom-functions/create-room/createRoom";
+import getGamingData from "../../../socket/functions/get-gaming-data/getGamingData.js";
+import createRoom from "../../../custom-functions/create-room/createRoom.js";
 
 const createRoomController = async (
   request: express.Request,

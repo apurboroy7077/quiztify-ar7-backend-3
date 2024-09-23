@@ -1,4 +1,4 @@
-import stopTheGameOfTheRoom from "./stop-it/stopTheGameNow";
+import stopTheGameOfTheRoom from "./stop-it/stopTheGameNow.js";
 
 const stopGame = (
   dataFromClient: dataFromClientForStoppingAndStartingGameType

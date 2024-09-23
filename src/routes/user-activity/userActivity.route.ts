@@ -11,7 +11,7 @@ import {
   SUB_ADDRESS_OF_LIKE_SOMETHING_API,
   SUB_ADDRESS_OF_MAKING_REPORT_API,
   SUB_ADDRESS_OF_UNFOLLOW_SOMEONE_API,
-} from "../../data/others/EnvironmentVariables";
+} from "../../data/others/EnvironmentVariables.js";
 import {
   checkLikeController,
   checkingIfASubjectIsFollowingSomethingOrNotController,
@@ -25,8 +25,8 @@ import {
   makingReportsController,
   searching1Controller,
   unfollowSomeoneController,
-} from "../../controllers/user-activity/userActivity.controller";
-import { SUB_ADDRESS_OF_SEARCH_API_1 } from "../../data/others/ApiAddresses";
+} from "../../controllers/user-activity/userActivity.controller.js";
+import { SUB_ADDRESS_OF_SEARCH_API_1 } from "../../data/others/ApiAddresses.js";
 
 const userActivityRouter = express.Router();
 userActivityRouter.post(

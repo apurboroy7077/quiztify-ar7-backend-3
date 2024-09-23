@@ -1,5 +1,5 @@
-import server from "./app";
-import { EXPRESS_SERVER_PORT } from "./data/quiz-game/environment-variable";
+import server from "./app.js";
+import { EXPRESS_SERVER_PORT } from "./data/quiz-game/environment-variable.js";
 
 server.listen(EXPRESS_SERVER_PORT, () => {
   console.log(

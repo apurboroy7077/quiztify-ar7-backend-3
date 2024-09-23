@@ -1,6 +1,6 @@
 import express from "express";
 import jwt from "jsonwebtoken";
-import { ARCHDUNE_ADMIN_JWT_KEY } from "../../data/archdune/variables/ArchduneVariables";
+import { ARCHDUNE_ADMIN_JWT_KEY } from "../../data/archdune/variables/ArchduneVariables.js";
 const ArchDuneCheckAdmin = (request: express.Request) => {
   const { adminToken } = request.body;
   jwt.verify(adminToken, ARCHDUNE_ADMIN_JWT_KEY);
