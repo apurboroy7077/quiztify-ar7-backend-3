@@ -3,7 +3,7 @@ import path from "path";
 const saveGamingData = (data) => {
     return new Promise((resolve, reject) => {
         try {
-            const filePath = path.join("./data/gaming-data", "gaming-data.json");
+            const filePath = path.join("./src/data/gaming-data", "gaming-data.json");
             const processedData = JSON.stringify(data);
             writeFile(filePath, processedData, "utf8", (error) => {
                 if (error) {
